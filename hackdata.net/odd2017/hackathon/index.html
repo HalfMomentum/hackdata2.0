@@ -7,18 +7,23 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    
     <title>HackData Hackathon</title>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Advent+Pro:300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="dest/css/bundle.css">
-
     <script src="../../../cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
     <script src="node_modules/particles.js/particles.js"></script>
 </head>
 
 <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+
+    }
     .tooltip_templates {
         display: none;
     }
@@ -32,9 +37,31 @@
     .data-source--procure {
         display: none;
     }
+    nav>ul>li{
+        font-size: 20px;
+    }
 </style>
 
-<body>
+<body class="container-fluid m-0 w-100 p-0" >
+    <nav class="navbar row m-0 p-0">
+        <div class="navbar-icon col-md-6 col-xs-6 col-sm-6 float-left">
+            <h1>Hackdata2.0</h1>        
+        </div>
+
+        <ul class="float-right col-md-6 col-xs-6 col-sm-6 text-center">
+            <li><a href="#about" class="link">About</a>
+            </li>
+            <li><a href="#challenges" class="link">Tracks</a>
+            </li>
+            <li><a href="#participation" class="link">Participation</a>
+            </li>
+            <li><a href="#criteria" class="link">Judging Criteria</a>
+            </li>
+            <li><a href="#schedule" class="link">Schedule</a>
+            </li>
+        </ul>
+
+    </nav>
 
 
     <section class="hero">
@@ -116,23 +143,6 @@
     </section>
 
 
-    <nav class="navbar">
-        <div class="navbar-icon">
-        </div>
-        <ul style="position: relative;">
-            <li><a href="#about" class="link">About</a>
-            </li>
-            <li><a href="#challenges" class="link">Tracks</a>
-            </li>
-            <li><a href="#participation" class="link">Participation</a>
-            </li>
-            <li><a href="#criteria" class="link">Judging Criteria</a>
-            </li>
-            <li><a href="#schedule" class="link">Schedule</a>
-            </li>
-        </ul>
-
-    </nav>
 
 
 
@@ -259,13 +269,14 @@ It’s a 30 hours event packed with sessions, workshops, networking activities, 
                 <div class="card-wrapper">
 
 
-                    <div class="paper-card">
-                        <header class="paper-card__header" style="height: 37px;>
+                    <div class="paper-card p-0" style="border: 0px solid black; border-radius: 10% ;  padding: 0;">
+                        <!-- <header class="paper-card__header" style="height: 37px;>
                             <span class="paper-card__title"><a style="font-size: 24px; href="challenges/health-challenge-1.html" class="challenge link-purple">Rise Of Bots</a></span>
                         </header>
-
-                        <article class="paper-card__description">
-
+ -->
+                        <article class="paper-card__description m-0 p-0 challenge" style="margin: 0px; box-shadow: 10px 10px rgba(0,0,0,0.1); border: 1px solid #888; border-radius: 10%; background: url('http://automates.xyz/wp-content/uploads/2016/04/What-are-Bots.jpeg'); background-position: center center; height: 300px; padding-top: 40% ; text-align: center; ">
+                                <h1 style="color: Cyan;">Rise Of Bots</h1>
+<!--        
 
 
                             <div class="paper-card__content">
@@ -277,7 +288,7 @@ It’s a 30 hours event packed with sessions, workshops, networking activities, 
                                 <a href="challenges/health-challenge-1.html" class="challenge link-orange">Read
                                 more...</a>
                             </div>
-
+ -->
                         </article>
 
                     </div>
