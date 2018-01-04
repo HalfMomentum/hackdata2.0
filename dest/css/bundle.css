@@ -2177,7 +2177,7 @@ fieldset[disabled] .btn.active {
   position: relative;
   height: 60px;
   width: 100%;
-  background: #0a2674;
+  background: #27b798;
   font-size: 11pt;
   font-family: 'PT Sans', Arial, sans-serif;
   font-weight: bold;
@@ -3345,7 +3345,7 @@ fieldset[disabled] .btn.active {
 
 /**
  * DEFAULT STYLE OF THE SIDETIP PLUGIN
- * 
+ *
  * All styles are "namespaced" with .tooltipster-sidetip to prevent
  * conflicts between plugins.
  */
@@ -3575,3 +3575,67 @@ corresponds to the arrow we want to display */
     height: 2060px;
   }
 }
+
+  section#who {
+    background-color: #27b798;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+      section#who a {
+      color: inherit; }
+    @media (min-width: 1260px) {
+        section#who {
+        position: relative;
+        padding-bottom: 50px; }
+          section#who:after {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 0 80px 100vw;
+          border-color: transparent transparent #fff transparent;
+          bottom: 0;
+          left: 0;
+          z-index: 1; } }
+      section#who > div {
+      padding: 30px 0; }
+        section#who > div header {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 1.5em; }
+        @media (min-width: 1260px) {
+            section#who > div header {
+            margin-left: -30px;
+            margin-right: -30px; } }
+        section#who > div ul {
+        padding: 0;
+        margin: 0;
+        text-align: center; }
+          section#who > div ul::after {
+          clear: both;
+          content: "";
+          display: table; }
+        @media (min-width: 1260px) {
+            section#who > div ul {
+            margin-left: -30px;
+            margin-right: -30px; } }
+          section#who > div ul li {
+          display: block;
+          padding: 1.5em 30px 0 30px;
+          box-sizing: border-box;
+          font-size: 0.9em; }
+          @media (min-width: 900px) {
+              section#who > div ul li {
+              float: left;
+              width: 20%; } }
+            section#who > div ul li span {
+            display: inline-block;
+            background-color: #fff;
+            padding: 1.2em;
+            border-radius: 50%; }
+              section#who > div ul li span svg {
+              fill: #0086FF;
+              display: block;
+              width: 100px;
+              height: 100px; }
