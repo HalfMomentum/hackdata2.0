@@ -3646,16 +3646,16 @@ corresponds to the arrow we want to display */
               width: 100px;
               height: 100px; }
               .banner {
-                background-color: #FFB900;
+                background-color: #000;
                 height: 100vh;
                 width: 100%;
                 display: table;
-                background-image: url(../../src/assets/images/banner.png);
+                background-image: url(../../src/assets/images/stars.png);
                 background-size: cover;
                 background-position: center; }
                 @media only screen and (-webkit-min-device-pixel-ratio: 1.3) and (min-width: 720px), only screen and (min--moz-device-pixel-ratio: 1.3) and (min-width: 720px), only screen and (-o-min-device-pixel-ratio: 1.3 / 1) and (min-width: 720px), only screen and (min-resolution: 125dpi) and (min-width: 720px), only screen and (min-resolution: 1.3dppx) and (min-width: 720px) {
                   .banner {
-                    background-image: url(../../src/assets/images/banner.png); } }
+                    background-image: url(../../src/assets/images/stars.png); } }
                 .banner > a {
                   display: table-cell;
                   vertical-align: middle;
@@ -3766,7 +3766,7 @@ nav>ul>li{ font-size: 20px; }
           padding: 30px 30px 15px 30px; }
 
 .pacman {
-  background: #27b798;
+  /* background: #27b798; */
   position: relative;
 }
 
