@@ -87,7 +87,19 @@
 
 <body>
 
-  <header class="banner">
+  <header class="banner pacman">
+        <div class="pac-game">
+                <div class="pac">
+                    <div class="pac-person">
+                        <div class="pac-up"></div>
+                        <div class="pac-down"></div>
+                    </div>
+                </div>
+                <div class="pacfood pac-food-1"></div>
+                <div class="pacfood pac-food-2"></div>
+                <div class="pacfood pac-food-3"></div>
+                <div class="pacfood pac-food-4"></div>
+            </div>
     <a href="#about">
       <img src="src/assets/images/website.png" alt="logo" height="500px" style="margin:0">
       <br>
@@ -154,9 +166,9 @@
 
     <!-- Activities Section ================================================-->
 
-    <section id="activities" class="activities" style="background-image : linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)), url('https://st.depositphotos.com/2850099/4845/i/950/depositphotos_48459313-stock-photo-fine-grained-texture-of-abrasive.jpg');">
-
-        <div class="content-sm">
+    <section id="activities" class="activities">
+            <div id="particles-js1">
+        <div style="display: block;position: absolute;left: 15%;right: 15%" class="content-sm">
 
             <figure class="img-wrap">
                 <img src="src/assets/images/schedule.svg" alt="Hackathon Schedule">
@@ -668,6 +680,24 @@
         </div>
     </section>
     <!-- Schedule Section ================================================-->
+    <section class="attraction">
+            <div class="row">
+
+              <div class="col-4">
+                <p>This will not only be about CODES and DATASETS</p>
+                <br>
+                <h2>Enjoy the performance of <br> THE LOCAL TRAIN <br> during the hackathon </h2>
+
+              </div>
+
+              <div class="col-8 w-100" style="padding:0px;">
+                <img src="src/assets/images/thelocaltrain.png" alt="" />
+              </div>
+
+          </div>
+
+
+        </section>
     <!-- Rights Liscense ================================================-->
     <section id="rights-liscence" class="rights-license">
         <h2 class="title">Rights/Licensing</h2>
@@ -1095,7 +1125,7 @@
   "retina_detect": true
 };
 var jsonUri = "data:text/plain;base64,"+window.btoa(JSON.stringify(partJson));
-            particlesJS.load('particles-js',jsonUri , function() {
+            particlesJS.load('particles-js1',jsonUri , function() {
   console.log('callback - particles.js config loaded');
 });
         </script>
