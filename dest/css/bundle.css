@@ -2279,7 +2279,7 @@ fieldset[disabled] .btn.active {
 @media only screen and (max-width: 500px) {
   .navbar {
     border-bottom: 0;
-    background: #0a2674;
+    background: #27b798;
     width: 100%;
     padding: 7px 0 0 0;
   }
@@ -2290,7 +2290,7 @@ fieldset[disabled] .btn.active {
     height: auto;
     padding: 10px 0 0 0;
     clear: both;
-    background: #0a2674;
+    background: #27b798;
     width: 100%;
   }
 
@@ -3645,7 +3645,7 @@ corresponds to the arrow we want to display */
               display: block;
               width: 100px;
               height: 100px; }
-              .banner {
+              /* .banner {
                 background-color: #000;
                 height: 100vh;
                 width: 100%;
@@ -3726,7 +3726,138 @@ corresponds to the arrow we want to display */
                   .banner + .main-nav, .banner + .sticky-wrapper .main-nav {
                     margin-top: -97px; }
                     .banner + .main-nav.stuck, .banner + .sticky-wrapper .main-nav.stuck {
-                      margin-top: 0; } }
+                      margin-top: 0; } } */
+
+.banner {
+  background: linear-gradient(253deg, #0cc898, #1797d2, #864fe1);
+    background-size: 300% 300%;
+    height: 100vh;
+    width: 100%;
+    display: table;
+    background-size: cover;
+    /* margin-bottom: -60px; */
+    height:93vh;
+    background-position: center;
+    -webkit-animation: Background 3s ease infinite;
+    -moz-animation: Background 3s ease infinite;
+    animation: Background 3s ease infinite;
+
+    
+}
+
+@-webkit-keyframes Background {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Background {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Background {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+.full-screen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(https://i.imgur.com/wCG2csZ.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column
+  /* works with row or column */
+  
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.jugad {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 4em;
+  letter-spacing: -2px;
+  text-align: center;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);
+  padding: 0;
+  margin:0;
+}
+
+.jugad:after {
+  display: block;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: 'Poiret One', sans-serif;
+  content: '10th - 11th February';
+  font-size: .4em;
+  text-align: center;
+}
+.jugad1 {
+  display: block;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: 'Poiret One', sans-serif;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.button-line {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+  font-size: 1.4em;
+  opacity: .8;
+  padding: 20px 40px;
+  text-decoration: none;
+  transition: all .5s ease;
+  margin: 0 auto;
+  display: block;
+  width: 100px;
+  z-index: 1000;
+}
+
+.button-line:hover {
+  opacity: 1;
+}
+
 
 nav>ul>li{ font-size: 20px; }
 
@@ -3766,7 +3897,6 @@ nav>ul>li{ font-size: 20px; }
           padding: 30px 30px 15px 30px; }
 
 .pacman {
-  /* background: #27b798; */
   position: relative;
 }
 
@@ -3775,7 +3905,6 @@ nav>ul>li{ font-size: 20px; }
   position: relative;
 }
 
-/* Pacman Animation */
 .pac-up {
   background-color:yellow;
   border-radius: 50px 50px 0 0;
@@ -3929,5 +4058,16 @@ nav>ul>li{ font-size: 20px; }
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1;
+}
+
+@media only screen and (min-width: 480px) {
+  #changeToRel {
+    display: block;position: absolute;left: 15%; right: 15%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #changeToRel {
+    display: block;position: relative;margin: auto;
+  }
 }
