@@ -87,65 +87,16 @@
 
 <body>
 
-
-    <section class="hero" style="font-size: 26px;">
-
-
-
-        <div class="content-md hero-wrap">
-
-
-            <img src="src/assets/images/banner.png" style="display:block;position:absolute;top:0;width:150%" alt="">
-
-            <div class="event-details">
-                <img src="src/assets/images/hackdata1.png" alt="">
-
-
-
-                <div>
-
-
-                    <div class="tooltip_templates">
-                        <span id="tooltip_content">
-                    <span  class="blockspan">7-8 Oct 2017, <br>Shiv Nadar University</span>
-                        <span class="blockspan">NH91, Tehsil Dadri</span>
-
-                        <span class="blockspan">Gautam Buddha Nagar, Greater Noida</span>
-
-                        <a href="https://www.google.co.in/maps?q=shiv+nadar+university&client=ubuntu&um=1&ie=UTF-8&sa=X&ved=0ahUKEwixiMiL59HVAhULQI8KHd4YA3sQ_AUICigB" class="view-map link-orange">View in map</a>
-
-
-                        </span>
-                    </div>
-                </div>
-
-                <div class="address">
-                    <span >
-                    <a style="font-size: 24px;font-color:white;" href="#" class="tooltip link-orange"
-                       data-tooltip-content="#tooltip_content">7-8 Oct 2017, <br>Shiv Nadar University</a>
-                </span>
-
-
-                    <span class="blockspan">NH91, Tehsil Dadri</span>
-                    <span class="blockspan">Gautam Buddha Nagar, Greater Noida</span>
-                    <span class="blockspan">Greater Noida</span>
-                </div>
-
-                <br>
-
-                <a href="https://goo.gl/forms/BTcSOrPEyDJTjqCj1"
-                   class="btn watch-video-btn" target="_blank">Register Here</a>
-            </div>
-
-</div>
-
-          <!--  <img src="src/assets/images/lines_bottom.svg" alt="" class="line-bottom">-->
-
-
-        </div>
-
-    </section>
-
+  <header class="banner">
+    <a href="#about">
+      <img src="src/assets/images/website.png" alt="logo" height="250px">
+      <br>
+      <p>
+        <span class="l2">10 - 11 February</span><br>
+        <span>Shiv Nadar University</span>
+      </p>
+    </a>
+  </header>
 
     <nav class="navbar">
         <div class="navbar-icon">
@@ -189,7 +140,7 @@
 
             <h2 class="title top-spacing"><b>About HackData</b></h2>
 
-                <p style="font-size: 20px; line-height: 1.2;">Hackdata 2.0 is an inderdisciplinary and open-ended event that would bring together creative minds from a variety of fields under one roof. Engineers, business students, designers and enterpreneurs would together build solutions utilizing data science in useful and positive ways. <br>
+                <p style="font-size: 20px; line-height: 1.2;">Hackdata 2.0 is an inderdisciplinary and open-ended event that would bring together creative minds from a variety of fields under one roof. Engineers, business students, designers and enterpreneurs would together build solutions utilizing data science in useful and positive ways.<br>
         A 30 hours event packed with sessions workshops and networking activities! Build a product using any dataset available in public domain and get a chance to take away home loads of swag and prizes!</p>
 
                 </p>
@@ -292,7 +243,6 @@
 
                                 <p class="block-with-text">
                                     Application of technologies to disrupt services in the financial sector. It puts technology at the heart of the financial services and enhances the offerings in this domain. Examples include innovations in risk management, trading, investing, personal finance, cryptocurrency trading.
-s
                                 </p>
 
                                 <a href="challenges/health-challenge-4.html" class="challenge link-orange">Read
@@ -332,7 +282,7 @@ s
                     <div class="challenges-type-health-more clearfix">
 
                         <div class="paper-card">
-                            <header class="paper-card__header" style="height: 37px;>
+                            <header class="paper-card__header" style="height: 37px;">
                                 <span class="paper-card__title"><a href="challenges/health-challenge-5.html" class="challenge link-purple">Social Health Security Programme</a></span>
                             </header>
                             <article class="paper-card__description">
@@ -396,10 +346,10 @@ s
     <!-- Eligible Section ================================================-->
     <section id="who">
       <div>
-        <header>
+        <header style="margin:auto">
           <h2 style="text-align:center">Am I eligible to participate</h2>
         </header>
-        <ul>
+        <ul style="margin:auto">
 
           <li>
             <span style="border-radius:25%">
@@ -423,7 +373,7 @@ s
           </li>
 
           <li>
-            <span style="border-radius:25%">
+            <span style="border-radius:25%"></span>
               <img src="src/assets/images/designer.svg" alt="developer">
             </span>
             <h3>Designer</h3>
@@ -447,8 +397,8 @@ s
     <!-- How to Section ================================================-->
     <section id="howto" class="howto">
         <div class="content-sm">
-            <figure class="howto-img">
-                <img src="src/assets/images/girl_participate.svg" alt="">
+            <figure style="background:blue">
+                <img style="border-color:red;border-thickness:2px" src="src/assets/images/girl_participate.svg" alt="">
             </figure>
             <h2 class="title howto-title">How to Participate? </h2>
         </div>
@@ -729,7 +679,7 @@ s
     <section id="rights-liscence" class="rights-license">
         <h2 class="title">Code Of Conduct</h2>
         <div class="content-md">
-            <p class="rights-desc">Please find the HackData 2017 Code Of Conduct <a href="https://hackcodeofconduct.org/503-hackdata_2017" class="link-orange">here</a>.</p>
+            <p class="rights-desc">Please find the <b>HackData 2.0</b> Code Of Conduct <a href="#" class="link-orange">here</a>.</p>
         </div>
     </section>
     <!-- Rights Liscense ================================================-->
@@ -747,7 +697,10 @@ s
             </div>
         </div>
     </section>
-    <section id="sponsors" class="supporters" style="padding: 0;">
+
+    <!--Title Sponsor -->
+
+    <!--section id="sponsors" class="supporters" style="padding: 0;">
         <div class="sponsor-wrap">
             <div class="content-md">
             <h2 class="title">Title Sponsor</h2>
@@ -760,11 +713,14 @@ s
                     </div>
             </div>
         </div>
-    </section>
-    <section id="sponsors" class="supporters" style="padding: 0;">
+    </section-->
+
+    <!-- Sponsors -->
+
+    <!--section id="sponsors" class="supporters" style="padding: 0;">
         <div class="sponsor-wrap">
             <div class="content-md">
-            <h2 class="title">Previous Sponsors</h2>
+            <h2 class="title">Sponsors</h2>
                 <div class="organizer-wrap">
                 <div class="row">
 
@@ -910,10 +866,44 @@ s
             </div>
 
         </div>
+    </section-->
+
+    <section id="sponsors" class="supporters" style="padding: 0;">
+        <div class="sponsor-wrap">
+            <div class="content-md">
+            <h2 class="title">Previous Sponsors</h2>
+                <div class="organizer-wrap">
+                  <div class="row">
+
+                      <div class="col-12 w-100">
+                        <img src="src/assets/images/collage-2018-01-04-3.jpg" alt=""
+                      </div>
+
+                  </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
-    </section>
+<section class="attraction">
+    <div class="row">
+
+      <div class="col-4">
+        <p>This will not only be about CODES and DATASETS</p>
+        <br>
+        <h2>Enjoy the performance of <br> THE LOCAL TRAIN <br> during the hackathon </h2>
+
+      </div>
+
+      <div class="col-8 w-100" style="padding:0px;">
+        <img src="src/assets/images/thelocaltrain.png" alt="" />
+      </div>
+
+  </div>
+
+
+</section>
     <!-- Rightsd/License ================================================-->
     <!-- Interested Section ================================================-->
     <!--<section id="interested" class="interested">-->
