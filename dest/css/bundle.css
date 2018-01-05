@@ -2246,7 +2246,7 @@ fieldset[disabled] .btn.active {
     background: #f6a623;
     height: 2px;
     width: 100%;
-    margin-top: -2px;
+    margin-top: -10px;
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
@@ -3727,6 +3727,8 @@ corresponds to the arrow we want to display */
                     margin-top: -97px; }
                     .banner + .main-nav.stuck, .banner + .sticky-wrapper .main-nav.stuck {
                       margin-top: 0; } }
+
+nav>ul>li{ font-size: 20px; }
 
     .attraction {
       font-family: transformers;
