@@ -792,7 +792,7 @@ fieldset[disabled] .btn.active {
   }
 }
 
-.about {
+.activities {
   background-color: #f5f9fb;
 }
 
@@ -1986,7 +1986,7 @@ fieldset[disabled] .btn.active {
 }
 
 .rights-license {
-  padding-top: 0;
+  padding-top: 50px;
 }
 
 .rights-license .rights-desc {
@@ -3760,3 +3760,170 @@ corresponds to the arrow we want to display */
           display: block;
           font-kerning: 2em;
           padding: 30px 30px 15px 30px; }
+
+.pacman {
+  background: #27b798;
+  position: relative;
+}
+
+.alternate {
+  background: #121949;
+  position: relative;
+}
+
+/* Pacman Animation */
+.pac-up {
+  background-color:yellow;
+  border-radius: 50px 50px 0 0;
+  height: 25px;
+  width: 50px;
+
+  -webkit-animation: eat-up 0.5s infinite;
+  animation: eat-up 0.5s infinite;
+}
+
+.pac-down {
+  background-color: yellow;
+  border-radius: 0 0 50px 50px;
+  height: 25px;
+  width: 50px;
+
+  -webkit-animation: eat-down 0.5s infinite;
+  animation: eat-down 0.5s infinite;
+}
+
+.pac {
+  height: 100%;
+  position: relative;
+}
+
+.pac-person {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  display: inline-block;
+
+  -webkit-animation: move-pac 17s linear infinite;
+  animation: move-pac 17s linear infinite;
+}
+
+.pacfood {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: white;
+}
+
+.pac-food-1 {
+  top: 70px;
+  left: 70px;
+
+  -webkit-animation: food-dis-1 17s linear infinite;
+  animation: food-dis-1 17s linear infinite;
+}
+
+.pac-food-2 {
+  top: 70px;
+  right: 70px;
+
+  -webkit-animation: food-dis-2 17s linear infinite;
+  animation: food-dis-2 17s linear infinite;
+}
+
+.pac-food-3 {
+  top: -webkit-calc(100vh - 80px);
+  top: calc(100% - 80px);
+  right: 70px;
+
+  -webkit-animation: food-dis-3 17s linear infinite;
+  animation: food-dis-3 17s linear infinite;
+}
+
+.pac-food-4 {
+  top: -webkit-calc(100vh - 80px);
+  top: calc(100% - 80px);
+  left: 70px;
+
+  -webkit-animation: food-dis-4 17s linear infinite;
+  animation: food-dis-4 17s linear infinite;
+}
+
+@-webkit-keyframes food-dis-1 {
+  0% {opacity: 0;}
+  0.01% {opacity: 0;}
+  1.01% {opacity: 0;}
+  80% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-webkit-keyframes food-dis-2 {
+  0% {opacity: 1;}
+  24.6% {opacity: 1;}
+  25.6% {opacity: 0;}
+  95% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-webkit-keyframes food-dis-3 {
+  0% {opacity: 1;}
+  48.7% {opacity: 1;}
+  49.7% {opacity: 0;}
+  95% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-webkit-keyframes food-dis-4 {
+  0% {opacity: 1;}
+  74% {opacity: 1;}
+  75% {opacity: 0;}
+  95% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-webkit-keyframes move-pac {
+  0% {left: 50px;}
+
+  25% {left: -webkit-calc(100% - 100px); top: 50px; -webkit-transform: rotate(0deg);}
+  25% {left: calc(100% - 100px); top: 50px; transform: rotate(0deg);}
+
+  25.1% {left: -webkit-calc(100% - 100px); top: 50px; -webkit-transform: rotate(90deg);}
+  25.1% {left: calc(100% - 100px); top: 50px; transform: rotate(90deg);}
+
+  50% {left: -webkit-calc(100% - 100px); top: -webkit-calc(100% - 100px); -webkit-transform: rotate(90deg);} 
+  50% {left: calc(100% - 100px); top: calc(100% - 100px); transform: rotate(90deg);}
+
+  50.1% {left: -webkit-calc(100% - 100px); top: -webkit-calc(100% - 100px); -webkit-transform: rotate(180deg);} 
+  50.1% {left: calc(100% - 100px); top: calc(100% - 100px); transform: rotate(180deg);}
+
+  75% {left: 50px; top: -webkit-calc(100% - 100px); -webkit-transform: rotate(180deg);} 
+  75% {left: 50px; top: calc(100% - 100px); transform: rotate(180deg);}
+
+  75.1% {left: 50px; top: -webkit-calc(100% - 100px); -webkit-transform: rotate(270deg);} 
+  75.1% {left: 50px; top: calc(100% - 100px); transform: rotate(270deg);}
+
+  99.9% {transform: rotate(270deg);}
+  100% {left: 50px}
+
+}
+
+
+@-webkit-keyframes eat-up {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(-35deg);}
+}
+
+@-webkit-keyframes eat-down {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(35deg);}
+}
+
+.pac-game {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
